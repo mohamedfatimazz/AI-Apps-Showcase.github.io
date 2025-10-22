@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>إضافة تطبيق - AI Apps Showcase</title>
+  <link href="style.css" rel="stylesheet">
+<script src="./js/jquery-3.7.1.js"></script>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">AI</div>
+    <div>
+      <div style="font-weight:800;color:var(--pink-dark)">AI Apps Showcase</div>
+      <div style="font-size:12px;color:#666">موقع للتعريف بتطبيقات الذكاء الاصطناعي</div>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Main Navigation">
+    <a href="home.html">Home</a>
+    <a href="aboutus.html">AboutUs</a>
+    <a href="apps.html">Apps</a>
+    <a href="add_app.html" class="active">Add App</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1 style="color: #D97F8B;">إضافة تطبيق جديد</h1>
+  <form id="addAppForm">
+    <label>اسم التطبيق</label>
+    <input type="text" id="appName" placeholder="AppName">
+
+    <label>اسم الشركة</label>
+    <input type="text" id="companyName" placeholder="CompanyName">
+
+    <label>رابط الموقع</label>
+    <input type="url" id="website" placeholder="https://example.com">
+
+    <label>مجاني؟</label>
+    <select id="freeOption">
+      <option value="">..Choose..</option>
+      <option>مجاني</option>
+      <option>غير مجاني</option>
+    </select>
+
+    <label>مجال الاستخدام</label>
+    <select id="category">
+      <option value="">..Choose..</option>
+      <option>General</option>
+      <option>Education</option>
+      <option>E-Commerce</option>
+      <option>Robotics</option>
+      <option>Entertainment</option>
+      <option>Analytical</option>
+      <option>Programming</option>
+      <option>Integrated</option>
+    </select>
+
+    <label>شرح مختصر</label>
+    <textarea id="description" rows="4"></textarea>
+
+    <div class="form-buttons">
+      <input type="submit" value="إرسال" class="btn-primary">
+      <input type="reset" value="إعادة" class="btn-reset">
+    </div>
+  </form>
+</div>
+
+<script src="./js/myFunctions.js"></script>
+</body>
+</html>
